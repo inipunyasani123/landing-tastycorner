@@ -2,7 +2,7 @@
 
 Struk Mingguan dari Tasty Corner: buletin gratis tiap Senin untuk warung, kedai, dan kafe — satu menu dibedah sampai rupiah terakhir. Plus kalkulator food cost.
 
-**Demo live:** https://landing-tastycorner.vercel.app
+**Demo live:** https://landing-tastycorner.pintuweb.id
 
 ![Tangkapan layar Tasty Corner](public/og.jpg)
 

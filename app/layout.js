@@ -7,10 +7,10 @@ const bricolage = Bricolage_Grotesque({ variable: "--font-bricolage", subsets: [
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 const plexMono = IBM_Plex_Mono({ variable: "--font-plex-mono", subsets: ["latin"], weight: ["400", "600"] });
 
-const __jsonld = {"@context":"https://schema.org","@type":"Periodical","name":"Struk Mingguan — Tasty Corner","description":"Buletin angka mingguan untuk usaha makanan dan minuman kecil","url":"https://landing-tastycorner.vercel.app","inLanguage":"id"};
+const __jsonld = {"@context":"https://schema.org","@type":"Periodical","name":"Struk Mingguan — Tasty Corner","description":"Buletin angka mingguan untuk usaha makanan dan minuman kecil","url":"https://landing-tastycorner.pintuweb.id","inLanguage":"id"};
 
 export const metadata = {
-  metadataBase: new URL("https://landing-tastycorner.vercel.app"),
+  metadataBase: new URL("https://landing-tastycorner.pintuweb.id"),
   title: { default: "Tasty Corner — Struk Mingguan untuk Usaha Makanan", template: "%s — Tasty Corner" },
   description: "Struk Mingguan dari Tasty Corner: buletin gratis tiap Senin untuk warung, kedai, dan kafe — satu menu dibedah sampai rupiah terakhir. Plus kalkulator food cost.",
   applicationName: "Tasty Corner",
@@ -18,11 +18,11 @@ export const metadata = {
   authors: [{ name: "Tasty Corner" }],
   creator: "Tasty Corner",
   publisher: "Tasty Corner",
-  alternates: { canonical: "https://landing-tastycorner.vercel.app" },
+  alternates: { canonical: "https://landing-tastycorner.pintuweb.id" },
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://landing-tastycorner.vercel.app",
+    url: "https://landing-tastycorner.pintuweb.id",
     siteName: "Tasty Corner",
     title: "Tasty Corner — Struk Mingguan untuk Usaha Makanan",
     description: "Struk Mingguan dari Tasty Corner: buletin gratis tiap Senin untuk warung, kedai, dan kafe — satu menu dibedah sampai rupiah terakhir. Plus kalkulator food cost.",
