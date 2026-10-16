@@ -4,7 +4,7 @@ import { EDISI, ISI } from '@/lib/struk';
 export default function Isi() {
   const e = EDISI[0];
   return (
-    <section id="isi" className="scroll-mt-16 bg-receipt px-6 py-20 md:py-28">
+    <section id="isi" className="scroll-mt-16 bg-receipt px-6 py-16 md:py-28">
       <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
         <div>
           <p className="receipt-label text-tomato-2">Yang dicetak tiap Senin</p>
@@ -26,7 +26,7 @@ export default function Isi() {
           <p className="mt-5 font-[family-name:var(--font-bricolage)] text-7xl font-extrabold tracking-tight text-receipt">{e.angka[0]}</p>
           <p className="mt-4 text-lg leading-relaxed text-receipt/85">{e.angka[1]}</p>
           <p className="mono mt-8 border-t border-dashed border-receipt/30 pt-5 text-sm text-receipt/85">Pelajaran: {e.pelajaran}</p>
-          <Link href={`/edisi/${e.slug}`} className="receipt-label mt-8 inline-block border-b-2 border-tomato-bright pb-1 text-tomato-bright hover:text-receipt">
+          <Link href={`/edisi/${e.slug}`} className="receipt-label mt-8 inline-block border-b-2 border-tomato-bright py-1 text-tomato-bright hover:text-receipt">
             Baca edisi #{e.nomor}
           </Link>
         </div>

@@ -16,7 +16,7 @@ export default function LeadForm() {
   const input = 'w-full border border-carbon/25 bg-receipt px-4 py-3 text-carbon focus:border-tomato-2 focus:outline-none';
 
   return (
-    <section id="langganan" className="scroll-mt-16 bg-tomato-2 px-6 py-20 text-white md:py-28">
+    <section id="langganan" className="scroll-mt-16 bg-tomato-2 px-6 py-16 text-white md:py-28">
       <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
         <div>
           <p className="receipt-label text-white/85">Gratis · berhenti kapan saja</p>

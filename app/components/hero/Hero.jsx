@@ -5,7 +5,7 @@ import StrukMenu from '../StrukMenu';
 export default function Hero() {
   const e = EDISI[0];
   return (
-    <section className="relative overflow-hidden bg-carbon px-6 pt-32 pb-20 text-receipt md:pt-40 md:pb-28">
+    <section className="relative overflow-hidden bg-carbon px-6 pt-28 pb-16 text-receipt md:pt-40 md:pb-28">
       <div className="mx-auto grid max-w-6xl items-center gap-14 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
         <div>
           <p className="receipt-label text-tomato-bright">Struk Mingguan · terbit tiap Senin</p>

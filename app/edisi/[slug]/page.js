@@ -12,8 +12,8 @@ export async function generateMetadata({ params }) {
   const e = edisiBySlug(slug);
   if (!e) return {};
   return {
-    title: `#${e.nomor}: ${e.judul}`,
-    description: `Struk Mingguan #${e.nomor} (${e.tanggal}): ${e.angka[0]} — ${e.angka[1]}.`,
+    title: e.judulPendek,
+    description: `Struk Mingguan #${e.nomor} (${e.tanggal.replace('Senin, ', '')}): ${e.angka[0]} — ${e.angka[1]}.`,
     alternates: { canonical: `${SITE}/edisi/${e.slug}` },
   };
 }

@@ -3,6 +3,9 @@ import SiteHeader from "./components/SiteHeader";
 import Footer from "./components/footer/Footer";
 import "./globals.css";
 
+// Tanggal edisi di lib/struk.js dihitung dari Senin terakhir; bangun ulang sekali sehari.
+export const revalidate = 86400;
+
 const bricolage = Bricolage_Grotesque({ variable: "--font-bricolage", subsets: ["latin"], weight: ["500", "700", "800"] });
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 const plexMono = IBM_Plex_Mono({ variable: "--font-plex-mono", subsets: ["latin"], weight: ["400", "600"] });
@@ -12,9 +15,9 @@ const __jsonld = {"@context":"https://schema.org","@type":"Periodical","name":"S
 export const metadata = {
   metadataBase: new URL("https://landing-tastycorner.pintuweb.id"),
   title: { default: "Tasty Corner — Struk Mingguan untuk Usaha Makanan", template: "%s — Tasty Corner" },
-  description: "Struk Mingguan dari Tasty Corner: buletin gratis tiap Senin untuk warung, kedai, dan kafe — satu menu dibedah sampai rupiah terakhir. Plus kalkulator food cost.",
+  description: "Struk Mingguan Tasty Corner: buletin gratis tiap Senin untuk warung, kedai, dan kafe. Satu menu dibedah sampai rupiah terakhir, plus kalkulator food cost.",
   applicationName: "Tasty Corner",
-  keywords: ["F&B", "kuliner", "strategi makanan", "restoran", "food business"],
+  keywords: ["buletin usaha makanan", "food cost", "hpp menu", "kalkulator food cost", "harga menu online"],
   authors: [{ name: "Tasty Corner" }],
   creator: "Tasty Corner",
   publisher: "Tasty Corner",
@@ -25,13 +28,13 @@ export const metadata = {
     url: "https://landing-tastycorner.pintuweb.id",
     siteName: "Tasty Corner",
     title: "Tasty Corner — Struk Mingguan untuk Usaha Makanan",
-    description: "Struk Mingguan dari Tasty Corner: buletin gratis tiap Senin untuk warung, kedai, dan kafe — satu menu dibedah sampai rupiah terakhir. Plus kalkulator food cost.",
+    description: "Struk Mingguan Tasty Corner: buletin gratis tiap Senin untuk warung, kedai, dan kafe. Satu menu dibedah sampai rupiah terakhir, plus kalkulator food cost.",
     images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Tasty Corner — Struk Mingguan untuk Usaha Makanan" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Tasty Corner — Struk Mingguan untuk Usaha Makanan",
-    description: "Struk Mingguan dari Tasty Corner: buletin gratis tiap Senin untuk warung, kedai, dan kafe — satu menu dibedah sampai rupiah terakhir. Plus kalkulator food cost.",
+    description: "Struk Mingguan Tasty Corner: buletin gratis tiap Senin untuk warung, kedai, dan kafe. Satu menu dibedah sampai rupiah terakhir, plus kalkulator food cost.",
     images: ["/og.jpg"],
   },
   robots: {

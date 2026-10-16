@@ -1,5 +1,7 @@
 import { EDISI, SITE } from "@/lib/struk";
 
+export const revalidate = 86400;
+
 export default function sitemap() {
   const now = new Date();
   return [
