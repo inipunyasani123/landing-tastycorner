@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { EDISI } from '@/lib/struk';
 
@@ -9,6 +10,7 @@ export default function EdisiList({ jumlah = EDISI.length, tingkat = 'h3' }) {
       {EDISI.slice(0, jumlah).map((e, i) => (
         <li key={e.slug}>
           <Link href={`/edisi/${e.slug}`} className={`struk block h-full px-5 py-6 transition-transform hover:-translate-y-1 ${i % 2 ? 'rotate-1' : '-rotate-1'}`}>
+            <Image src={`/images/menu/${e.slug}.webp`} alt="" width={300} height={300} sizes="(min-width: 1024px) 15rem, (min-width: 640px) 45vw, 5rem" className="float-right mb-2 ml-3 h-[4.5rem] w-[4.5rem] object-cover sm:float-none sm:mb-4 sm:ml-0 sm:aspect-[4/3] sm:h-auto sm:w-full" />
             <span className="block text-xs">#{e.nomor} · {e.tanggal.replace('Senin, ', '')}</span>
             <H className="mt-3 font-[family-name:var(--font-bricolage)] text-lg leading-snug font-extrabold text-carbon">{e.judul}</H>
             <span className="struk-garis mt-4 block pt-3 text-2xl font-semibold text-tomato-2">{e.angka[0]}</span>

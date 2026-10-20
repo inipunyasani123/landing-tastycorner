@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { EDISI, SITE, edisiBySlug, rp } from '@/lib/struk';
@@ -46,6 +47,12 @@ export default async function SatuEdisi({ params }) {
             {e.catatan.map((c) => <p key={c.slice(0, 24)}>{c}</p>)}
           </div>
           <p className="mono mt-8 border-l-4 border-tomato-2 pl-4 font-semibold text-carbon">Pelajaran: {e.pelajaran}</p>
+          {/* Foto menu ditempel di samping struk, seperti foto yang dijepit di papan pesanan */}
+          <figure className="relative mx-auto mt-12 w-full max-w-[17rem] -rotate-2 bg-white p-3 pb-4 shadow-[0_18px_34px_-20px_rgb(17_17_17/0.45)] md:mx-0">
+            <span aria-hidden="true" className="absolute -top-3 left-1/2 h-6 w-24 -translate-x-1/2 rotate-2 bg-tomato-2/25" />
+            <Image src={`/images/menu/${e.slug}.webp`} alt={e.foto.alt} width={900} height={900} sizes="17rem" className="aspect-square h-auto w-full object-cover" />
+            <figcaption className="mono mt-3 text-xs leading-relaxed text-carbon">{e.foto.ket}</figcaption>
+          </figure>
         </div>
         <div className="space-y-10">
           <section aria-labelledby="dibedah">
